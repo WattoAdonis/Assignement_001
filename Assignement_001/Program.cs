@@ -16,7 +16,7 @@ namespace Assignement_001
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Assignment_001_2016_05_06());
         }
     }
 }
