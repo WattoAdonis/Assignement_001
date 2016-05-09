@@ -56,7 +56,6 @@
             System.Windows.Forms.ListViewItem listViewItem24 = new System.Windows.Forms.ListViewItem("Xx");
             System.Windows.Forms.ListViewItem listViewItem25 = new System.Windows.Forms.ListViewItem("Yy");
             System.Windows.Forms.ListViewItem listViewItem26 = new System.Windows.Forms.ListViewItem("Zz");
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Assignment_001_2016_05_06));
             this.btnExit = new System.Windows.Forms.Button();
             this.lblRequestNumbers = new System.Windows.Forms.Label();
             this.txtBoxFirstNumber = new System.Windows.Forms.TextBox();
@@ -77,7 +76,6 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.radioBtnVowels = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.txtBoxUserSelectedLetter = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnExit
@@ -246,7 +244,7 @@
             // lblRequestCharInput
             // 
             this.lblRequestCharInput.AutoSize = true;
-            this.lblRequestCharInput.Location = new System.Drawing.Point(240, 272);
+            this.lblRequestCharInput.Location = new System.Drawing.Point(237, 272);
             this.lblRequestCharInput.Name = "lblRequestCharInput";
             this.lblRequestCharInput.Size = new System.Drawing.Size(202, 13);
             this.lblRequestCharInput.TabIndex = 16;
@@ -314,7 +312,7 @@
             listViewItem24,
             listViewItem25,
             listViewItem26});
-            this.listView1.Location = new System.Drawing.Point(150, 361);
+            this.listView1.Location = new System.Drawing.Point(153, 288);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(410, 238);
             this.listView1.TabIndex = 17;
@@ -323,18 +321,19 @@
             // radioBtnVowels
             // 
             this.radioBtnVowels.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioBtnVowels.Location = new System.Drawing.Point(566, 361);
+            this.radioBtnVowels.Location = new System.Drawing.Point(569, 288);
             this.radioBtnVowels.Name = "radioBtnVowels";
             this.radioBtnVowels.Size = new System.Drawing.Size(104, 96);
             this.radioBtnVowels.TabIndex = 18;
             this.radioBtnVowels.TabStop = true;
             this.radioBtnVowels.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.radioBtnVowels.UseVisualStyleBackColor = true;
+            //this.radioBtnVowels.CheckedChanged += new System.EventHandler(this.radioBtnVowels_CheckedChanged);
             // 
             // radioButton1
             // 
             this.radioButton1.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton1.Location = new System.Drawing.Point(566, 503);
+            this.radioButton1.Location = new System.Drawing.Point(569, 430);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(104, 96);
             this.radioButton1.TabIndex = 19;
@@ -342,22 +341,12 @@
             this.radioButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // txtBoxUserSelectedLetter
-            // 
-            this.txtBoxUserSelectedLetter.Location = new System.Drawing.Point(175, 304);
-            this.txtBoxUserSelectedLetter.Name = "txtBoxUserSelectedLetter";
-            this.txtBoxUserSelectedLetter.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.txtBoxUserSelectedLetter.Size = new System.Drawing.Size(333, 20);
-            this.txtBoxUserSelectedLetter.TabIndex = 20;
-            this.txtBoxUserSelectedLetter.Text = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
-            // 
             // Assignment_001_2016_05_06
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(682, 623);
-            this.Controls.Add(this.txtBoxUserSelectedLetter);
+            this.ClientSize = new System.Drawing.Size(682, 538);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.radioBtnVowels);
             this.Controls.Add(this.listView1);
@@ -379,7 +368,6 @@
             this.Controls.Add(this.lblRequestNumbers);
             this.Controls.Add(this.btnExit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Assignment_001_2016_05_06";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Assignment 001 2016 05 06";
@@ -411,7 +399,6 @@
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.RadioButton radioBtnVowels;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox txtBoxUserSelectedLetter;
     }
 }
 

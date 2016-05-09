@@ -167,6 +167,10 @@ namespace Assignement_001
 
         private void btnSwap_Click(object sender, EventArgs e)
         {
+            string temp = "";
+            temp = txtBoxFirstNumber.Text;
+            txtBoxFirstNumber.Text = txtBoxSecondNumber.Text;
+            txtBoxSecondNumber.Text = temp;
             //txtBoxFirstNumber.Text ^= txtBoxSecondNumber.Text;
             //Swap myObject = new Swap();
 
@@ -179,7 +183,5 @@ namespace Assignement_001
             //int tempSwap = 0;
 
         }
-
-        
     }
 }
