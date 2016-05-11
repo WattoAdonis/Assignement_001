@@ -78,6 +78,8 @@
             this.radioBtnVowels = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.txtBoxUserSelectedLetter = new System.Windows.Forms.TextBox();
+            this.lblLetterChoice = new System.Windows.Forms.Label();
+            this.txtBoxLetter = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnExit
@@ -351,12 +353,31 @@
             this.txtBoxUserSelectedLetter.TabIndex = 20;
             this.txtBoxUserSelectedLetter.Text = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
             // 
+            // lblLetterChoice
+            // 
+            this.lblLetterChoice.AutoSize = true;
+            this.lblLetterChoice.Location = new System.Drawing.Point(147, 336);
+            this.lblLetterChoice.Name = "lblLetterChoice";
+            this.lblLetterChoice.Size = new System.Drawing.Size(105, 13);
+            this.lblLetterChoice.TabIndex = 21;
+            this.lblLetterChoice.Text = "Your letter of choice:";
+            // 
+            // txtBoxLetter
+            // 
+            this.txtBoxLetter.Location = new System.Drawing.Point(258, 333);
+            this.txtBoxLetter.Name = "txtBoxLetter";
+            this.txtBoxLetter.Size = new System.Drawing.Size(27, 20);
+            this.txtBoxLetter.TabIndex = 22;
+            this.txtBoxLetter.TextChanged += new System.EventHandler(this.txtBoxLetter_TextChanged);
+            // 
             // Assignment_001_2016_05_06
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(682, 623);
+            this.Controls.Add(this.txtBoxLetter);
+            this.Controls.Add(this.lblLetterChoice);
             this.Controls.Add(this.txtBoxUserSelectedLetter);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.radioBtnVowels);
@@ -412,6 +433,8 @@
         private System.Windows.Forms.RadioButton radioBtnVowels;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.TextBox txtBoxUserSelectedLetter;
+        private System.Windows.Forms.Label lblLetterChoice;
+        private System.Windows.Forms.TextBox txtBoxLetter;
     }
 }
 

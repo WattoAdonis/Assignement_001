@@ -1,5 +1,7 @@
 ﻿/*
  * Author:          Anthony Mousoulis
+ * E-mail:          anthony.mousoulis2015@hotmail.com
+ * GitHub:          https://mousoulisanthony.visualstudio.com/
  * Date Started:    May 5th, 2016.
  * Date Completed:  May 8th, 2016.
  * Description:     Create windows form application for users to enter 
@@ -183,5 +185,40 @@ namespace Assignement_001
             //int tempSwap = 0;
 
         }
+
+        private void txtBoxLetter_TextChanged(object sender, EventArgs e) //; == {}
+        {
+            //int[][] scores = new int[3][]
+            //    {
+            //        new int[] { 92,93, 94},
+            //        new int[] { 85, 66, 87, 88},
+            //        new int[] { 185, 166, 847, 858}
+            //    };
+
+
+            //char v = 6;
+            //char c = 20;
+            string[] vowels = new string[] { "A,a,E,e,I,i,O,o,U,u,Y,y" };
+            //stringArray[12];
+            //{ "A, a, E, e, I, i, O, o, U, u, Y, y" };
+
+            //vowels[] = { 'A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u', 'Y', 'y' };
+
+            //vowels.Contains('A' | 'a' | 'E' | 'e' | 'I' | 'i' | 'O' | 'o' | 'U' | 'u' | 'Y' | 'y');
+
+            if (!txtBoxLetter.Text.Contains("") && (txtBoxLetter.Text.Contains("A,a,E,e,I,i,O,o,U,u,Y,y")))
+            //if (!txtBoxLetter.Text.Contains("") && (txtBoxLetter.Text.Contains("A,a,E,e,I,i,O,o,U,u,Y,y")))
+            {
+                MessageBox.Show("The letter you chose " + "\"" + txtBoxLetter + "\"" + " is a vowel!!!");
+                //("The letter you chose is a vowel!!!");
+                //Console.WriteLine("The letter you chose is a vowel!!!");
+            }
+            else if (txtBoxLetter.Text.Contains("B,b,C,c,D,d,F,f,G,g,H,h,J,j,K,k,L,l,M,m,N,n,P,p,Q,q,R,r,S,s,T,t,V,v,W,w,X,x,Z,z"))
+            {
+                MessageBox.Show("The letter you have chosen is a consonant!!!");
+            }
+            else
+                MessageBox.Show("Try again!!!");
+        } 
     }
 }
